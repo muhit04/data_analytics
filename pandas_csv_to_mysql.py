@@ -4,7 +4,7 @@
 import pandas as pd
 from sqlalchemy import create_engine
 
-class CareerPath:
+class CSVtoDB:
     def __init__(self, path):
         self.path = path
         
@@ -18,6 +18,6 @@ class CareerPath:
     
 
 if __name__ == "__main__":
-    c = CareerPath("<csv_file_path>")
+    c = CSVtoDB("<csv_file_path>")
     c.load_csv_file()
     c.load_val_into_db()
